@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+<script type='text/javascript' src='scripts/respond.min.js'></script>
+<title>About Me</title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+
+<div id="navcontainer">
+<ul id="navlist">
+<li ><a href="index.shtml">Main Page</a></li>
+<li><a href="resume.html">Resume</a></li>
+<li><a href="page%201.shtml">Web Design Project 1</a></li>
+<li><a href="page%204.shtml">Models</a></li>
+<li><a href="page%205.shtml">IGME101</a></li>
+<li ><a href="rich.shtml" >Rich Media</a></li>
+<li ><a href="elements.shtml">Elements</a></li>
+<li ><a href="ida2.shtml" >IGME 102</a></li>
+<li><a href="page%202.shtml">Programming</a></li>
+<li><a href="page%203.shtml">Graphical Editors</a></li>
+<li><a href="page%206.shtml">Calculator</a></li>
+<li id="active"><a href="page%207.shtml"  id="current">About Me</a></li>
+
+</ul>
+</div>
+<div class="update"> <!--#echo var="DATE_LOCAL"--></div>
+<h1>About Donald Pelcher </h1>
+<p>
+I have long been interested in video games; games having been a distinct part of my life since childhood.<br />
+I continue to enjoy games, whether its a series I've loved for years, a masterpiece I missed in the past, or a recent release.<br />
+As I got older, I gradually became more interested in how exactly how such things were created.<br />
+In these modern times, media has evolved into various interactive forms that provide many more options than the older restrictive forms of media.<br />
+
+</p>
+<br /><br /><br /><br /><br />
+<footer>
+
+<!--#include file="includes/footer.html"-->
+</footer>	
+</body>
+
+</html>

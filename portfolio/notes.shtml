@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+<script type='text/javascript' src='scripts/respond.min.js'></script>
+<title>Notes</title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+<div id="navcontainer">
+<ul id="navlist">
+<li><a href="index.shtml">Main Page</a></li>
+<li><a href="page%201.shtml">Project 1</a></li>
+<li><a href="page%202.shtml">Programming</a></li>
+<li><a href="page%203.shtml">Graphical Editors</a></li>
+<li><a href="page%204.shtml">Nav css</a></li>
+<li><a href="page%205.shtml">Palette</a></li>
+<li><a href="page%206.shtml">Calculator</a></li>
+<li><a href="page%207.shtml">About Me</a></li>
+
+<li id="active"><a href="notes.shtml" id="current">Notes</a></li>
+</ul>
+</div>
+<div class="update"> <!--#echo var="DATE_LOCAL"--></div>
+<h2>The last time this file was updated was: </h2>
+	<div class="update">	<!--#flastmod file="index.html"-->	</div>
+<p>
+How I exceeded the base requirements<br />
+I exceeded the given instructions by presenting example images of almost all the sample projects.</p>
+<p>It was somewhat difficult to make the css responsive.</p>
+<p>How I could have improved<br />
+The images could have been displayed in a more visually appealing way, especially in regards to the responsive design.
+<br />
+<br />
+The images were taken from Pencil, Paint, as well as the sites that I built.<br/>
+</p>
+
+<h3>Documentation </h3>
+<p>
+The responsive design was added.
+Successfully added ajquery carousel to improve how pages with multiple images are displayed, thus making the page dynamic.
+Unfortunately I have still been unable to get images to display on the error page.
+
+<br />
+Error: <a href="dffdfff.html">Here</a><br />
+Password Protected Page: 
+<a href="https://people.rit.edu/~dap4092/230/portfolio/auth/myPage" >Here </a><br />
+</p><br /><br /><br /><br /><br />
+<footer>
+
+<!--#include file="includes/footer.html"-->
+</footer>	
+</body>
+
+</html>

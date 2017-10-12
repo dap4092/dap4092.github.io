@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+<script type='text/javascript' src='scripts/respond.min.js'></script>
+<title>Programming</title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+
+<body>
+
+<div id="navcontainer">
+<ul id="navlist">
+<li ><a href="index.shtml" >Main Page</a></li>
+<li><a href="resume.html">Resume</a></li>
+<li><a href="page%201.shtml">Web Design Project 1</a></li>
+<li><a href="page%204.shtml">Models</a></li>
+<li><a href="page%205.shtml">IGME101</a></li>
+<li ><a href="rich.shtml" >Rich Media</a></li>
+<li ><a href="elements.shtml">Elements</a></li>
+<li ><a href="ida2.shtml" >IGME 102</a></li>
+<li id="active"><a href="page%202.shtml" id="current">Programming</a></li>
+<li><a href="page%203.shtml">Graphical Editors</a></li>
+<li><a href="page%206.shtml">Calculator</a></li>
+<li><a href="page%207.shtml">About Me</a></li>
+
+</ul>
+</div>
+<div class="update"> <!--#echo var="DATE_LOCAL"--></div>
+<h1>Programming </h1>
+<p>
+I am familiar with javascript in processing, as well as C# in visual studio.<br />
+I also make use of unity. 
+</p><br /><br /><br /><br /><br />
+<footer>
+
+<!--#include file="includes/footer.html"-->
+</footer>	
+</body>
+
+</html>

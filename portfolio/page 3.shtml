@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+<script type='text/javascript' src='scripts/respond.min.js'></script>
+<title>Graphics</title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+   <script src="jquery.flippy.min.js" > </script>
+    <script src="switch.js" > </script>
+	<style>
+	a:hover{
+   			opacity: 0.5;
+   			transition-property: opacity;
+   			transition-duration: 0.25s;
+   		}
+   		
+   		#controls{
+   			width:400px;
+   			margin-bottom: 0.5em;
+   		}
+
+        .flipbox {
+          background-color: #28b9df;
+          width: 400px;
+          height: 300px;
+          margin-bottom: 15px;
+        }
+		</style>
+</head>
+
+
+<body>
+<div id="navcontainer">
+<ul id="navlist">
+<li ><a href="index.shtml" >Main Page</a></li>
+<li><a href="resume.html">Resume</a></li>
+<li><a href="page%201.shtml">Web Design Project 1</a></li>
+<li><a href="page%204.shtml">Models</a></li>
+<li><a href="page%205.shtml">IGME101</a></li>
+<li ><a href="rich.shtml" >Rich Media</a></li>
+<li ><a href="elements.shtml">Elements</a></li>
+<li ><a href="ida2.shtml" >IGME 102</a></li>
+<li><a href="page%202.shtml">Programming</a></li>
+<li id="active"><a href="page%203.shtml" id="current">Graphical Editors</a></li>
+<li><a href="page%206.shtml">Calculator</a></li>
+<li><a href="page%207.shtml">About Me</a></li>
+
+</ul>
+</div>
+<div class="update"> <!--#echo var="DATE_LOCAL"--></div>
+<h1>Choice of Graphical Editors </h1>
+<p>
+I am familiar with Paint and Pencil as graphical tools.<br />
+I have used these tools when I have needed use of graphical editors.
+
+</p>
+<section id="main">
+      <h1>Snapshots</h1>
+      <div id="controls">
+        <a href="#" id="previous" title="Previous Image">Previous</a>
+        <a href="#" id="next" title="Next Image">Next</a>
+      </div>
+      <div class="container">
+        <div class="flipbox-container box100">
+            <div id="flipbox1" class="flipbox">
+            </div>
+        </div>
+        <p id="description">A screenshot of the program Pencil</p>
+
+		<!--
+<img src="../images/pencil sample.png" width="700" height="379" alt="A screenshot of the program Pencil" />
+<br />
+<img src="../images/paint sample.png" width="700" height="371" alt="A screenshot of the program Paint" />
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+-->
+<br /><br /><br /><br /><br />
+<footer>
+
+<!--#include file="includes/footer.html"-->
+</footer>	
+</body>
+
+</html>

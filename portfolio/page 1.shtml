@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+<script type='text/javascript' src='scripts/respond.min.js'></script>
+<title>Project 1</title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+
+<div id="navcontainer">
+<ul id="navlist">
+<li ><a href="index.shtml">Main Page</a></li>
+<li><a href="resume.html">Resume</a></li>
+<li id="active"><a href="page%201.html"  id="current">Web Design Project 1</a></li>
+<li><a href="page%204.shtml">Models</a></li>
+<li><a href="page%205.shtml">IGME101</a></li>
+<li ><a href="rich.shtml" >Rich Media</a></li>
+<li ><a href="elements.shtml">Elements</a></li>
+<li ><a href="ida2.shtml" >IGME 102</a></li>
+<li><a href="page%202.shtml">Programming</a></li>
+<li><a href="page%203.shtml">Graphical Editors</a></li>
+<li><a href="page%206.shtml">Calculator</a></li>
+<li><a href="page%207.shtml">About Me</a></li>
+
+</ul>
+</div>
+<div class="update"> <!--#echo var="DATE_LOCAL"--></div>
+<h1>Project 1 </h1>
+<p> This is a project from IGME.230- Web Design & Implementation.<br />
+<img src="../images/project 1 sample.png" height="492" width="600" alt="A cropped image of the web page" title="Take a look" />
+The given assignment was to create a website to provide an understandable tutorial of your own choice. <br />
+I chose to make it about the Pokemon franchise,as such I styled the page in the same color scheme as the classic logo.<br />
+<a href="../project1/index.html" >Check it out here</a>
+<br /><br /><br /><br /><br />
+<footer>
+
+<!--#include file="includes/footer.html"-->
+</footer>	
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+<script type='text/javascript' src='scripts/respond.min.js'></script>
+<title>Calculator</title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+
+<div id="navcontainer">
+<ul id="navlist">
+<li ><a href="index.shtml">Main Page</a></li>
+<li><a href="resume.html">Resume</a></li>
+<li><a href="page%201.shtml">Web Design Project 1</a></li>
+<li><a href="page%204.shtml">Models</a></li>
+<li><a href="page%205.shtml">IGME101</a></li>
+<li ><a href="rich.shtml" >Rich Media</a></li>
+<li ><a href="elements.shtml">Elements</a></li>
+<li ><a href="ida2.shtml" >IGME 102</a></li>
+<li><a href="page%202.shtml">Programming</a></li>
+<li><a href="page%203.shtml">Graphical Editors</a></li>
+<li id="active"><a href="page%206.shtml"  id="current">Calculator</a></li>
+<li><a href="page%207.shtml">About Me</a></li>
+
+</ul>
+</div>
+<div class="update"> <!--#echo var="DATE_LOCAL"--></div>
+<h1>Calculator </h1>
+<p>
+<img src="../images/calculator sample.png" width="903" height="555" alt="Three text bars to fill and buttons that add or multiply the numbers entered." title="An assignment from class.">
+This is an assignment from IGME 230; the purpose of the assignment was to use javascript to modify the contents of html and create a simple calculator.<br />
+<a href="../exercises/simple_calculator_start.html">Check it out here.</a>
+</p><br /><br /><br /><br /><br />
+<footer>
+
+<!--#include file="includes/footer.html"-->
+</footer>	
+</body>
+
+</html>

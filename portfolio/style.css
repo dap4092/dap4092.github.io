@@ -1,0 +1,68 @@
+img{float:right;}
+p{font-family: sans-serif; font-size: 120%; margin-left: 15px;}
+body{background-color:#c8ef80;}
+h1{color: crimson; margin-left: 10px;}
+.logo{font-style: italic; font-size:120%; margin-left: 15px;}
+.resume{font-style: italic; font-size:120%; margin-left: 15px;color:red}
+a:{color:red;}
+a:visited{color:turquoise;}
+a:hover{font-style:italic;}
+h2{font-size:10px; margin-left: 15px;}
+h3{margin-left;}
+.update{margin-left:15px;}
+
+
+@media screen and (max-width: 480px) {
+body div li{background-color:red; 
+margin:0;
+display: block;  
+margin-bottom: 3px;
+}
+body div a{
+display:block;
+padding:10px;
+text-align:center;
+}
+}
+
+
+#navlist
+{
+padding: 3px 0;
+margin-left: 0;
+border-bottom: 1px solid #778;
+font: bold 12px Verdana, sans-serif;
+}
+
+#navlist li
+{
+list-style: none;
+margin: 0;
+display: inline;
+}
+
+#navlist li a
+{
+padding: 3px 0.5em;
+margin-left: 3px;
+border: 1px solid #778;
+border-bottom: none;
+background: #CCFFCC;
+text-decoration: none;
+}
+
+#navlist li a:link { color: #448; }
+#navlist li a:visited { color: #667; }
+
+#navlist li a:hover
+{
+color: #000;
+background: #33CC33;
+border-color: #227;
+}
+
+#navlist li a#current
+{
+background: white;
+border-bottom: 1px solid white;
+}
