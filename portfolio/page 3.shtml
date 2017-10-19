@@ -30,8 +30,8 @@
 		</style>
 </head>
 
-
 <body>
+
 <div id="navcontainer">
 <ul id="navlist">
 <li ><a href="index.shtml" >Main Page</a></li>
@@ -44,7 +44,6 @@
 <li ><a href="ida2.shtml" >IGME 102</a></li>
 <li><a href="page%202.shtml">Programming</a></li>
 <li id="active"><a href="page%203.shtml" id="current">Graphical Editors</a></li>
-<li><a href="page%206.shtml">Calculator</a></li>
 <li><a href="page%207.shtml">About Me</a></li>
 
 </ul>
