@@ -35,8 +35,8 @@ This is an assignment from IGME 230; the purpose of the assignment was to use ja
 <a href="../exercises/simple_calculator_start.html">Check it out here.</a>
 </p><br /><br /><br /><br /><br />
 <footer>
-
-<!--#include file="includes/footer.html"-->
+<script language="javascript" type="text/javascript" 
+  src="footer.txt"></script>
 </footer>	
 </body>
 

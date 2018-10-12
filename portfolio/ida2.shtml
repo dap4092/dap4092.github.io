@@ -34,8 +34,8 @@ These are the projects that I created for my Interac Des & Alg Prob Solv II cour
 </p>
 <br /><br /><br /><br /><br />
 <footer>
-
-<!--#include file="includes/footer.html"-->
+<script language="javascript" type="text/javascript" 
+  src="footer.txt"></script>
 </footer>	
 </body>
 

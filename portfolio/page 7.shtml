@@ -40,8 +40,8 @@ wayofboon@gmail.com<br />
 </p>
 <br /><br /><br /><br /><br />
 <footer>
-
-<!--#include file="includes/footer.html"-->
+<script language="javascript" type="text/javascript" 
+  src="footer.txt"></script>
 </footer>	
 </body>
 

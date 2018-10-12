@@ -35,8 +35,8 @@ I am a fith year student majoring in the New Media Interactive Development progr
 
 
 <footer>
-
-<!--#include file="includes/footer.html"-->
+<script language="javascript" type="text/javascript" 
+  src="footer.txt"></script>
 </footer>	
 </body>
 

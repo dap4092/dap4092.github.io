@@ -37,8 +37,8 @@ These are the models that I created for the purpose of a collaborative 3d animat
 </p>
 <br /><br /><br /><br /><br />
 <footer>
-
-<!--#include file="includes/footer.html"-->
+<script language="javascript" type="text/javascript" 
+  src="footer.txt"></script>
 </footer>	
 </body>
 

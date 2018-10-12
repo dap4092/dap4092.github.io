@@ -76,8 +76,8 @@ I have used these tools when I have needed use of graphical editors.
 -->
 <br /><br /><br /><br /><br />
 <footer>
-
-<!--#include file="includes/footer.html"-->
+<script language="javascript" type="text/javascript" 
+  src="footer.txt"></script>
 </footer>	
 </body>
 
