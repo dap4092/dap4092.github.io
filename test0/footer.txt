@@ -1,1 +1,1 @@
-document.write('<p>Donald Pelcher, &copy;2015 "                              " <object id="datish"></object></p><script>var d = new Date();document.getElementById("datish").innerHTML = d;</script>')
+document.write('<object id="">Donald Pelcher, &copy;2015  </object><object id="datish"></object><script>var d = new Date();document.getElementById("datish").innerHTML = d;</script>')
