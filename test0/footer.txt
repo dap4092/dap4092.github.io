@@ -1,6 +1,1 @@
-document.write('<p>	
-	Donald Pelcher, &copy;2015
-	<br />
-	<!--#echo var="DATE_LOCAL"-->
-	
-	</p>'>
+document.write('<p>	Donald Pelcher, &copy;2015<br /><!--#echo var="DATE_LOCAL"--></p>'>
