@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+<script type='text/javascript' src='scripts/respond.min.js'></script>
+<title>Donald Pelcher's Portfolio</title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+
+<body>
+
+<div id="navcontainer">
+<ul id="navlist">
+<li id="active"><a href="index.shtml" id="current">Main Page</a></li>
+<li><a href="resume.html">Resume</a></li>
+<li><a href="page%201.shtml">Web Design Project 1</a></li>
+<li><a href="page%204.shtml">Models</a></li>
+<li><a href="page%205.shtml">IGME101</a></li>
+<li ><a href="rich.shtml" >Rich Media</a></li>
+<li ><a href="elements.shtml">Elements</a></li>
+<li ><a href="ida2.shtml" >IGME 102</a></li>
+<li><a href="page%207.shtml">About Me</a></li>
+
+</ul>
+</div>
+
+<h1>Donald Pelcher</h1>
+
+<p>
+I am a lifelong resident of Rochester, New York.<br /><br />
+I am a student majoring in the New Media Interactive Development program at the Rochester Institute of Technology.<br />
+</p>
+
+
+<footer>
+<script language="javascript" type="text/javascript" 
+  src="footer.txt"></script>
+</footer>	
+</body>
+
+</html>

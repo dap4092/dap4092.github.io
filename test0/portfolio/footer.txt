@@ -1,0 +1,1 @@
+document.write('<object id="copyright">Donald Pelcher, &copy;2015 <br /></object><object id="datish"></object><script>var d = new Date();document.getElementById("datish").innerHTML = d;</script>')
