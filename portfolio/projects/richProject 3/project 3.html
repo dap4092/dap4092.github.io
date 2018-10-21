@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Harm Detector</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+	*{
+ 		font-family:sans-serif;
+ 	}
+	.d{
+	position:absolute;
+	top:55px;
+	}
+	code{
+ 		font-family:monospace;
+ 	}
+ 	 	section>div{
+ 		background-color:#ccc;
+ 		padding:.1em;
+		font-size:12px;
+ 	}
+	#quake{
+		margin-left: 1180px;
+		margin-right: 30px;
+		border:1px solid black;
+		
+	}
+	#weather{
+		margin-left: 20px;
+		border:1px solid black;
+	}
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+	  select{
+	  position:absolute;
+	  top:50px;
+	  }
+	  #distance{
+	  margin-left: 1400px;
+	  }
+	  #wdistance{
+	  margin-left: 10px;
+	  }
+      #map {
+        height: 90%;
+		width: 60%;
+		top:20px;
+		left: 250px;
+      }
+	  h3{
+	  display:none;
+	  }
+	  h1{
+	  margin-left:500px;
+	  }
+	  #search{
+	  left:1200px;
+	  }
+	  #wsearch{
+	  left:100px;
+	  }
+	  button{
+	  position:absolute;
+	  color:red;
+	  font-weight:bold;
+	  height:30px;
+	  width:130px;
+	  z-index:100;
+	  top:35px;
+	  }
+	  #status{
+	  margin-left: 1150px;
+	  position:absolute;
+	  top:0px;
+	  }
+	  #wstatus{
+	  margin-left: 100px;
+	  position:absolute;
+	  top:0px;
+	  }
+	 
+	  #defaultZoomButton{
+	  top:70px;
+	  left:700px
+	  }
+	  #date{
+	  color:red;
+	  }
+    </style>
+	
+  </head>
+  <body>
+  <h1>
+	How safe is your area, really?
+	</h1>
+    <div id="map"></div>
+    <script>
+      var map;
+	  var infowindow;
+	  
+	  
+		"use strict";
+		window.onload = init;
+		
+		var PROXY_URL = "proxy.php?filename=";
+	var URL = "http://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&jsonerror=true&eventtype=earthquake&minmagnitude=1.0&orderby=magnitude";
+	var url = "";
+	var GOLISANO_HALL = {
+		latitude:43.084156,
+		longitude:-77.67514
+	};
+		
+		function init(){
+			document.querySelector("#search").onclick = search;
+			document.querySelector("#wsearch").onclick = wsearch;
+		}
+		
+		function search(){
+		// today's date
+		var now = new Date();
+		var nowYear = now.getFullYear();
+		var nowMonth = now.getMonth()+1;
+		var nowDate = now.getDate();
+	
+		// yesterday's date
+		var lastWeek = new Date();
+		lastWeek.setDate(lastWeek.getDate() - 7);
+		var lastWeekYear = lastWeek.getFullYear();
+		var lastWeekMonth = lastWeek.getMonth()+1;
+		var lastWeekDate = lastWeek.getDate();
+		
+		// build url
+		
+		url = PROXY_URL + URL;
+		url += "&latitude=" + GOLISANO_HALL.latitude;
+		url += "&longitude=" + GOLISANO_HALL.longitude;
+		url += "&maxradiuskm=" + document.querySelector("#distance").value;
+		
+		// starttime=2016-01-01&endtime=2016-01-02
+		url += "&starttime=" + lastWeekYear + "-" + lastWeekMonth + "-" + lastWeekDate;
+		url += "&endtime=" + nowYear + "-" + nowMonth + "-" + nowDate;
+		
+		// replace ampersands with the hex equivalent to make PHP happy
+		url = url.replace(/&/g,'%26');
+		
+		// load the url
+		var xhr = new XMLHttpRequest();
+		xhr.onload = function(){
+			var myJSON = JSON.parse(xhr.responseText);
+			jsonLoaded(myJSON);
+		}
+		xhr.open('GET',url,true);
+		// try to prevent browser caching by sending a header to the server
+		xhr.setRequestHeader("If-Modified-Since", "Sat, 1 Jan 2010 00:00:00 GMT");
+		xhr.send();
+
+		// update UI
+		document.querySelector('#status').innerHTML = "<i>Status: Search Initiated!</i>";
+		document.querySelector("#results").innerHTML = "???";
+		console.log("loading: " + url);
+	}
+	
+
+	function jsonLoaded(xhr){
+		// here the xhr param is actually a JSON object (literal), not the XHR object
+		// just being lazy and not changing the parameter name from what it was in the other examples
+		console.log("obj stringified = " + JSON.stringify(xhr));
+		
+		// bail out if there is an error
+		if (xhr.metadata.status == "400"){
+			document.querySelector('#status').innerHTML = "<i>Error! " + xhr.metadata.error + "<i>";
+			return;
+		}
+		
+		var count = xhr.metadata.count;
+		document.querySelector('#status').innerHTML = "<i>" + count + " earthquakes found!<i>";
+		
+		// bail out if there are no results
+		if(!count) return;
+		
+		//  build up a list of the results
+		var earthquakes = xhr.features;
+		var bigString = "<section>";
+		//bigString += "<p><small><b>Loaded:</b> <code>" + url + "</code></small></p>";
+		earthquakes.forEach(function(obj){
+			var properties = obj.properties;
+			var title = properties.title;
+			var url = properties.url;
+			var longitude = obj.geometry.coordinates[0];
+			var latitude = obj.geometry.coordinates[1];
+			var time = properties.time;
+			
+			bigString += "<div id='quake'>";
+			bigString += "<h4>" + title + " (" + latitude + ", " + longitude + ")</h4>";
+			bigString += "<h4>" + time + "</h4>";
+		//	bigString += "<p><a target='_blank' href='" + url + "'>" + url + "</a></p>";
+			bigString += "</div>";
+			
+		});
+		bigString += "</section>";
+		document.querySelector("#results").innerHTML = bigString;
+		
+	}
+		
+	  
+	 
+		
+		var PROXY_URL = "proxy2.php?filename=";
+		var api ="eb0a0caa0fb354f8afc53eeca480960d";
+		//lat=+GOLISANO_HALL.latitude+"35&lon="+GOLISANO_HALL.longitude+"139&appid="+api
+	var wURL = "http://api.openweathermap.org/data/2.5/forecast?";
+	var wurl = "";
+	
+		
+		function wsearch(){
+		
+		// build url
+		
+		wurl = PROXY_URL + wURL;
+		wurl += "lat=" + GOLISANO_HALL.latitude;
+		wurl += "&lon=" + GOLISANO_HALL.longitude;
+		wurl += "&appid=" + api;
+		//wurl += "&maxradiuskm=" + document.querySelector("#wdistance").value;
+		
+		// replace ampersands with the hex equivalent to make PHP happy
+		wurl = wurl.replace(/&/g,'%26');
+		
+		// load the url
+		var wxhr = new XMLHttpRequest();
+		wxhr.onload = function(){
+			var wmyJSON = JSON.parse(wxhr.responseText);
+			wjsonLoaded(wmyJSON);
+		}
+		wxhr.open('GET',wurl,true);
+		// try to prevent browser caching by sending a header to the server
+		wxhr.setRequestHeader("If-Modified-Since", "Sat, 1 Jan 2010 00:00:00 GMT");
+		wxhr.send();
+
+		// update UI
+		document.querySelector('#wstatus').innerHTML = "<i>Status: Search Initiated!</i>";
+		document.querySelector("#wresults").innerHTML = "???";
+		console.log("loading: " + wurl);
+	}
+	
+
+	function wjsonLoaded(wxhr){
+		// here the xhr param is actually a JSON object (literal), not the XHR object
+		// just being lazy and not changing the parameter name from what it was in the other examples
+		console.log("obj stringified = " + JSON.stringify(wxhr));
+		
+		// bail out if there is an error
+		/*if (wxhr.metadata.status == "400"){
+			document.querySelector('#wstatus').innerHTML = "<i>Error! " + wxhr.metadata.error + "<i>";
+			return;
+		}
+		*/
+		var count = wxhr.cnt;
+		document.querySelector('#wstatus').innerHTML = "<i>" + count + " weather found!<i>";
+		console.log(count);
+		// bail out if there are no results
+		if(!count) return;
+		
+		//  build up a list of the results
+		var forecasts = wxhr.list;
+		var bigString = "<section>";
+		//bigString += "<p><small><b>Loaded:</b> <code>" + url + "</code></small></p>";
+		forecasts.forEach(function(obj){
+			var main = obj.main;
+			var temp = main.temp;
+			var date = obj.dt_txt;
+			var pres = main.humidity;
+			var hum = main.pressure;
+			var winsp = obj.wind.speed;
+			var wint = obj.wind.deg;
+			
+			bigString += "<div id='weather'>";
+			bigString += "<h4 id='date'>"+ date + "</h4>";
+			bigString += "<h4>"+ "Temp: " + temp + "</h4>";
+			bigString += "<h4>"+ "Wind Speed: " + winsp +  " Wind Deg: " + wint +"</h4>";
+			bigString += "<h4>"+ "Humidity: " + hum +  " Pressure: " + pres +"</h4>";
+			bigString += "</div>";
+			
+		});
+		bigString += "</section>";
+		document.querySelector("#wresults").innerHTML = bigString;
+		
+	}
+		
+	  
+      function initMap() {
+        var mapOptions = {
+          center: {lat:43.082634, lng: -77.68004},
+          zoom: 16,
+		  mapTypeId: google.maps.MapTypeId.ROADMAP  
+        };
+		 map = new google.maps.Map(document.getElementById('map'), mapOptions);
+
+		   document.querySelector("#defaultZoomButton").onclick = function(){
+		  map.setZoom(16);
+		  };
+
+		  
+		  function addMarker(latitude, longitude, title){
+		  var position = {lat:latitude, lng:longitude};
+		  var marker = new google.maps.Marker({position:position, map:map});
+		  marker.setTitle(title);
+		  google.maps.event.addListener(marker, 'click', function(e){
+		  makeInfoWindow(this.position, this.title);});
+		  }
+		  function makeInfoWindow(position,msg){
+		  if(infowindow) infowindow.close();
+		  infowindow = new google.maps.InfoWindow({
+		  map:map,
+		  position:position,
+		  content: "<b>" + msg + "</b>"
+		  });
+		  }
+		  
+      }
+		  
+
+    </script>
+		  <p><button id="defaultZoomButton">Default Zoom</button> </p>
+	<div id='content'></div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCbm-cdE3J2VygBWYS0L6vv2ateaWFuY1E&callback=initMap"
+    async defer></script>
+	
+	
+
+	<p id='status'><i>Status: Ready to search for earthquakes!</i></p>
+	<p id='wstatus'><i>Status: Ready to search for weather!</i></p>
+	<button id="wsearch">Search!</button> <button id="search">Search!</button> 
+	<p>
+		
+		<select id="distance">
+			<option value="200">200km</option>
+			<option value="400">400km</option>
+			<option value="600">600km</option>
+			<option value="800">800km</option>
+			<option selected value="1000">1000km</option>
+			<option value="2000">2000km</option>
+			<option value="5000">5000km</option>
+		</select>
+	</p>
+	<h3>Results:</h3>
+	<p class="d"  id="results"></p>
+ <p class="d"  id="wresults"></p>
+	
+  </body>
+</html>
