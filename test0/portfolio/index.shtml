@@ -11,6 +11,7 @@
 
 <body>
 
+<header>
 <div id="navcontainer">
 <ul id="navlist">
 <li id="active"><a href="index.shtml" id="current">Main Page</a></li>
@@ -22,9 +23,9 @@
 <li ><a href="elements.shtml">Elements</a></li>
 <li ><a href="ida2.shtml" >IGME 102</a></li>
 <li><a href="page%207.shtml">About Me</a></li>
-
 </ul>
 </div>
+</header>
 
 <h1>Donald Pelcher</h1>
 
@@ -33,6 +34,12 @@ I am a lifelong resident of Rochester, New York.<br /><br />
 I am a student majoring in the New Media Interactive Development program at the Rochester Institute of Technology.<br />
 </p>
 
+<div class="logo">
+<a target="_blank" href="http://djbank.cias.rit.edu/">
+<img src="Images/logo.png" height="307" width="1319" alt="The Oblique logo."> 
+</a>
+<div class="desc">The major project I collaborated on, working in C#.</div>
+</div>
 
 <footer>
 <script language="javascript" type="text/javascript" 

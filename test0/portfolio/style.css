@@ -12,6 +12,23 @@ h3{margin-left;}
 .update{margin-left:15px;}
 
 
+div.logo {
+	background-color:#000000;
+
+    border: 1px solid red;
+    width: 320px;
+}
+
+div.logo img {
+    width: 100%;
+    height: auto;
+	
+	
+}
+div.desc {
+    padding: 5px;
+    text-align: center;
+}
 
 @media screen and (max-width: 480px) {
 body div li{background-color:red; 
@@ -69,7 +86,9 @@ border-bottom: 1px solid white;
 }
 
 footer{
+width:100%;
 position: fixed;
-   left: 0;
-   bottom: 0;
+text-align: center;
+position: fixed;
+bottom: 0;
 }
