@@ -25,6 +25,19 @@ div.logo img {
 	
 	
 }
+div.poke {
+	background-color:#000000;
+
+    border: 1px solid red;
+    width: 320px;
+}
+
+div.poke img {
+    width: 100%;
+    height: auto;
+	
+	
+}
 div.desc {
     padding: 5px;
     text-align: center;

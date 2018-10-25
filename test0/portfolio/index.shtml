@@ -16,7 +16,6 @@
 <ul id="navlist">
 <li id="active"><a href="index.shtml" id="current">Main Page</a></li>
 <li><a href="resume.html">Resume</a></li>
-<li><a href="page%201.shtml">Web Design Project 1</a></li>
 <li><a href="page%204.shtml">Models</a></li>
 <li><a href="page%205.shtml">IGME101</a></li>
 <li ><a href="rich.shtml" >Rich Media</a></li>
@@ -36,9 +35,16 @@ I am a student majoring in the New Media Interactive Development program at the 
 
 <div class="logo">
 <a target="_blank" href="http://djbank.cias.rit.edu/">
-<img src="Images/logo.png" height="307" width="1319" alt="The Oblique logo."> 
+<img src="Images/logo.png" width="1319" height="307" alt="The Oblique logo."> 
 </a>
 <div class="desc">The major project I collaborated on, working in C#.</div>
+</div>
+<div class="poke">
+<a target="_blank" href="http://donaldpelcher.me/portfolio/project1/index.html">
+<img src="Images/International_Pokémon_logo.svg.png" width="300" height="111" alt="The Pokemon logo."> 
+</a>
+<div class="desc">A project where I was to demonstrate working knowledge of html and CSS,
+I chose Pokemon as the theme with the color scheme referencing the classic logo.</div>
 </div>
 
 <footer>
