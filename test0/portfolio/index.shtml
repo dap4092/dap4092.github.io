@@ -16,7 +16,6 @@
 <ul id="navlist">
 <li id="active"><a href="index.shtml" id="current">Main Page</a></li>
 <li><a href="resume.html">Resume</a></li>
-<li><a href="page%204.shtml">Models</a></li>
 <li><a href="page%205.shtml">IGME101</a></li>
 <li ><a href="rich.shtml" >Rich Media</a></li>
 <li ><a href="elements.shtml">Elements</a></li>
@@ -37,15 +36,15 @@ I am a student majoring in the New Media Interactive Development program at the 
 <a target="_blank" href="http://djbank.cias.rit.edu/">
 <img src="Images/logo.png" width="1319" height="307" alt="The Oblique logo."> 
 </a>
-<div class="desc">The major project I collaborated on, working in C#.</div>
+<div class="desclogo">The major project I collaborated on, working in C#.</div>
 </div>
 <div class="poke">
 <a target="_blank" href="http://donaldpelcher.me/portfolio/project1/index.html">
 <img src="Images/International_Pokémon_logo.svg.png" width="300" height="111" alt="The Pokemon logo."> 
 </a>
-<div class="desc">A project where I was to demonstrate working knowledge of html and CSS,
+<div class="descpoke">A project where I was to demonstrate working knowledge of html and CSS,
 I chose Pokemon as the theme with the color scheme referencing the classic logo.</div>
-
+</div>
 
 <div class="clearfix">
 <div class="models">
@@ -64,13 +63,9 @@ I chose Pokemon as the theme with the color scheme referencing the classic logo.
 <div class="text">These are some 3D models I created using Maya & Photoshop.</div>
 </div>
 
+</div>
 <br>
 
-<div style="text-align:center">
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-</div>
 
 <script>
 var slideIndex = 0;
@@ -79,21 +74,19 @@ showSlides();
 function showSlides() {
     var i;
     var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
     for (i = 0; i < slides.length; i++) {
        slides[i].style.display = "none";  
     }
     slideIndex++;
     if (slideIndex > slides.length) {slideIndex = 1}    
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
+    
     slides[slideIndex-1].style.display = "block";  
-    dots[slideIndex-1].className += " active";
     setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
 </script>
 </div>
+
+
 
 <footer>
 <script language="javascript" type="text/javascript" 

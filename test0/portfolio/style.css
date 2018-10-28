@@ -1,4 +1,4 @@
-img{float:left;}
+
 p{font-family: sans-serif; font-size: 120%; margin-left: 150px;width: 600px;word-wrap: break-word;}
 body{background-color:#c8ef80;}
 h1{color: crimson; margin-left: 130px;}
@@ -38,11 +38,26 @@ div.poke img {
 	
 	
 }
-div.desc {
+div.desclogo {
+	display:none;
     padding: 5px;
     text-align: center;
+	color:white;
 }
 
+div.descpoke {
+	display:none;
+    padding: 5px;
+    text-align: center;
+	color:white;
+}
+
+a:hover + div.descpoke {
+	display:block;
+}
+a:hover + div.desclogo {
+	display:block;
+}
 
 .swipe{
     overflow:auto;
@@ -106,19 +121,28 @@ border-bottom: 1px solid white;
 
 footer{
 width:100%;
-position: fixed;
+background-color:#c8ef80;
 text-align: center;
 position: fixed;
 bottom: 0;
 }
 
+.mySlides{
+	display: none;
+}
+.mySlides img {
+	
+	vertical-align: middle;
+}
+
+
 
 /* models */
 .models {
   max-width: 1000px;
-  width:100%;
-  position: relative;
-  margin:auto;
+  position: absolute;
+  float:right;
+  right:0;
 }
 
 /* Caption text */
@@ -126,23 +150,13 @@ bottom: 0;
   color: #f2f2f2;
   font-size: 15px;
   padding: 8px 12px;
-  
+  position: absolute;
   bottom: 8px;
   width: 100%;
+  text-align: center;
 }
 
 
-
-/* The dots/bullets/indicators */
-.dot {
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
 
 .active {
   background-color: #717171;
@@ -154,7 +168,7 @@ bottom: 0;
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
   animation-duration: 1.5s;
-}
+} 
 
 @-webkit-keyframes fade {
   from {opacity: .4} 
