@@ -11,20 +11,56 @@ h2{font-size:10px; margin-left: 15px;}
 h3{margin-left;}
 .update{margin-left:15px;}
 
+.logo {
+    
+    
+}
 
-div.logo {
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: relative;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.logo:hover .image {
+  opacity: 0.3;
+}
+
+.logo:hover .middle {
+  opacity: 1;
+}
+
+.logo {
 	background-color:#000000;
 
     border: 1px solid red;
     width: 320px;
 }
 
-div.logo img {
-    width: 100%;
-    height: auto;
-	
-	
+
+
+div.desclogo {
+	position:relative;
+	width:auto;
+	height:auto;
+	color: white;
+	font-size: 16px;
+	padding: 16px 32px;
 }
+
 div.poke {
 	background-color:#000000;
 
@@ -38,12 +74,6 @@ div.poke img {
 	
 	
 }
-div.desclogo {
-	display:none;
-    padding: 5px;
-    text-align: center;
-	color:white;
-}
 
 div.descpoke {
 	display:none;
@@ -53,9 +83,6 @@ div.descpoke {
 }
 
 a:hover + div.descpoke {
-	display:block;
-}
-a:hover + div.desclogo {
 	display:block;
 }
 

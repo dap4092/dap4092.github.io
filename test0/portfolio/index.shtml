@@ -34,13 +34,15 @@ I am a student majoring in the New Media Interactive Development program at the 
 
 <div class="logo">
 <a target="_blank" href="http://djbank.cias.rit.edu/">
-<img src="Images/logo.png" width="1319" height="307" alt="The Oblique logo."> 
+<img src="Images/logo.png" class="image" width="1319" height="307" alt="The Oblique logo."> 
 </a>
+<div class="middle">
 <div class="desclogo">The major project I collaborated on, working in C#.</div>
+</div>
 </div>
 <div class="poke">
 <a target="_blank" href="http://donaldpelcher.me/portfolio/project1/index.html">
-<img src="Images/International_Pokémon_logo.svg.png" width="300" height="111" alt="The Pokemon logo."> 
+<img src="Images/International_Pokémon_logo.svg.png" class="image" width="300" height="111" alt="The Pokemon logo."> 
 </a>
 <div class="descpoke">A project where I was to demonstrate working knowledge of html and CSS,
 I chose Pokemon as the theme with the color scheme referencing the classic logo.</div>
