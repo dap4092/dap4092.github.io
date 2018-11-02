@@ -14,8 +14,6 @@
 <ul id="navlist">
 <li ><a href="index.shtml">Main Page</a></li>
 <li><a href="resume.html">Resume</a></li>
-<li><a href="page%201.shtml">Web Design Project 1</a></li>
-<li><a href="page%204.shtml">Models</a></li>
 <li><a href="page%205.shtml">IGME101</a></li>
 <li ><a href="rich.shtml" >Rich Media</a></li>
 <li id="active"><a href="elements.shtml"  id="current">Elements</a></li>

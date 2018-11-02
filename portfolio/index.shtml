@@ -11,28 +11,94 @@
 
 <body>
 
+<header>
 <div id="navcontainer">
 <ul id="navlist">
 <li id="active"><a href="index.shtml" id="current">Main Page</a></li>
 <li><a href="resume.html">Resume</a></li>
-<li><a href="page%201.shtml">Web Design Project 1</a></li>
-<li><a href="page%204.shtml">Models</a></li>
 <li><a href="page%205.shtml">IGME101</a></li>
 <li ><a href="rich.shtml" >Rich Media</a></li>
 <li ><a href="elements.shtml">Elements</a></li>
 <li ><a href="ida2.shtml" >IGME 102</a></li>
 <li><a href="page%207.shtml">About Me</a></li>
-
 </ul>
 </div>
+</header>
 
 <h1>Donald Pelcher</h1>
 
 <p>
 I am a lifelong resident of Rochester, New York.<br /><br />
-I am a fith year student majoring in the New Media Interactive Development program at the Rochester Institute of Technology.<br />
+I am a student majoring in the New Media Interactive Development program at the Rochester Institute of Technology.<br />
 </p>
 
+<div class="row"> 
+
+<div class="logo">
+<a target="_blank" href="http://djbank.cias.rit.edu/">
+<img src="Images/logo.png" class="image" width="1319" height="307" alt="The Oblique logo."> 
+</a>
+<div class="middle">
+<div class="desclogo">The major project I collaborated on, working in C#.
+<a href="http://djbank.cias.rit.edu/">Click to visit </a></div>
+</div>
+</div>
+
+<div class="poke">
+<a target="_blank" href="http://donaldpelcher.me/portfolio/project1/index.html">
+<img src="Images/International_Pokémon_logo.svg.png" class="image" width="300" height="111" alt="The Pokemon logo."> 
+</a>
+<div class="middle">
+<div class="descpoke">A project where I was to demonstrate working knowledge of html and CSS,
+I chose Pokemon as the theme with the color scheme referencing the classic logo.
+<a href="http://donaldpelcher.me/portfolio/project1/index.html">Click to visit </a></div>
+
+</div>
+</div>
+
+<div class="clearfix">
+<div class="models">
+
+<div class="mySlides fade">
+  <img src="Images/barrel.png" height="250" width="250">
+</div>
+ 
+<div class="mySlides fade">
+  <img src="Images/chest.png" height="250" width="250">
+</div>
+
+<div class="mySlides fade">
+  <img src="Images/coin.png" height="250" width="250">
+</div>
+<div class="middle">
+<div class="text">These are some 3D models I created using Maya & Photoshop.</div>
+</div>
+</div>
+
+</div>
+<br>
+
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    
+    slides[slideIndex-1].style.display = "block";  
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+</div>
+
+</div>
 
 <footer>
 <script language="javascript" type="text/javascript" 
