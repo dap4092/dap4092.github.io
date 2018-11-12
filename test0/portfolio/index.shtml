@@ -32,6 +32,8 @@ I am a lifelong resident of Rochester, New York.<br /><br />
 I am a student majoring in the New Media Interactive Development program at the Rochester Institute of Technology.<br />
 </p>
 
+<!--<<<<<<<<<<<<<<<<<<<-->
+
 <div class="row"> 
 
 <div class="logo">
@@ -44,6 +46,11 @@ I am a student majoring in the New Media Interactive Development program at the 
 </div>
 </div>
 
+</div>
+
+<!--<<<<<<<<<<<<<<<<<-->
+
+<div class="row">
 <div class="poke">
 <a target="_blank" href="http://donaldpelcher.me/portfolio/project1/index.html">
 <img src="Images/International_Pokémon_logo.svg.png" class="image" width="300" height="111" alt="The Pokemon logo."> 
@@ -52,10 +59,23 @@ I am a student majoring in the New Media Interactive Development program at the 
 <div class="descpoke">A project where I was to demonstrate working knowledge of html and CSS,
 I chose Pokemon as the theme with the color scheme referencing the classic logo.
 <a href="http://donaldpelcher.me/portfolio/project1/index.html">Click to visit </a></div>
-
 </div>
 </div>
+</div>
 
+<!---<<<<<<<<<<<<<<<<<<<< <-->
+<div class="row">
+These are several exercises I completed to demonstrate various features of html and css.<br>
+This exercise saw implementing audio which could be selected by the user, while also presenting a visualizer.<br>
+This exercise saw me creating a canvas where circles of varying colors bounced around.
+User interaction allows circles to be added or removed, lively music plays in the background.
+
+
+
+</div>
+<!--<<<<<<<<<<<<<<<<<<<<<<<-->
+
+<div class="row">
 <div class="clearfix">
 <div class="models">
 
