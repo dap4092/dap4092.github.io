@@ -15,7 +15,6 @@
 <li ><a href="index.shtml">Main Page</a></li>
 <li><a href="resume.html">Resume</a></li>
 <li><a href="page%205.shtml">IGME101</a></li>
-<li ><a href="rich.shtml" >Rich Media</a></li>
 <li ><a href="elements.shtml">Elements</a></li>
 <li ><a href="ida2.shtml" >IGME 102</a></li>
 <li id="active"><a href="page%207.shtml"  id="current">About Me</a></li>
@@ -25,6 +24,7 @@
 <div class="update"> <!--#echo var="DATE_LOCAL"--></div>
 <h1>About Me </h1>
 <p>
+I am a lifelong resident of Rochester, New York.<br /><br />
 I have long been interested in video games; games having been a distinct part of my life since childhood.<br /><br />
 I continue to enjoy games, whether its a series I've loved for years, a masterpiece I missed in the past, or a recent release.<br /><br />
 As I got older, I gradually became more interested in how exactly how such things were created.<br /><br />
