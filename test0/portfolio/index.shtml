@@ -16,7 +16,6 @@
 <ul id="navlist">
 <li id="active"><a href="index.shtml" id="current">Main Page</a></li>
 <li><a href="Pelcher, Donald_resume.pdf">Resume</a></li>
-<li><a href="page%205.shtml">IGME101</a></li>
 <li ><a href="elements.shtml">Elements</a></li>
 <li ><a href="ida2.shtml" >IGME 102</a></li>
 <li><a href="page%207.shtml">About Me</a></li>
@@ -67,18 +66,23 @@ I chose Pokemon as the theme with the color scheme referencing the classic logo.
 These are several exercises I completed to demonstrate various features of html and css.<br>
 
 This exercise saw implementing audio which could be selected by the user, while also presenting a visualizer.<br>
+Click the image to check out the page.
+<div class="visual">
 <a target="_blank" href="http://donaldpelcher.me/portfolio/projects/richproject%201/web-audio-visualizer-start.html">
 <img src="Images/visual.png" class="image" width="300" height="111" alt="An audio visualizer."> 
 </a>
+</div>
 </div>
 
 <div class="row">
 This exercise saw me creating a canvas where circles of varying colors bounced around.
 User interaction allows circles to be added or removed, lively music plays in the background.
+Click the image to check out the page.
+<div class="collider">
 <a href="http://donaldpelcher.me/portfolio/projects/richproject%202/index.html">
 <img src="Images/collider.png" class="image" width="" height="111" alt="A canvas of circles."> 
 </a>
-
+</div>
 
 </div>
 <!--<<<<<<<<<<<<<<<<<<<<<<<-->
@@ -86,10 +90,11 @@ User interaction allows circles to be added or removed, lively music plays in th
 <div class="row">
 This was the final project of my first New Media course.
 Here I simply created a Pong clone with Processing.
+<div class="pong">
 <!--<a href="http://donaldpelcher.me/portfolio/projects/-->
 <img src="Images/pong.png" class="image" width="300" height="111" alt="A Pong clone."> 
 </a>
-
+</div>
 
 </div>
 <!--<<<<<<<<<<<<<<<<<<<<<<<-->
