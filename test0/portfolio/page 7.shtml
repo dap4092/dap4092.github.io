@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
 <script type='text/javascript' src='scripts/respond.min.js'></script>
 <title>About Me</title>
+<link href="https://fonts.googleapis.com/css?family=Domine" rel="stylesheet"> 
 <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 
@@ -22,7 +23,7 @@
 </div>
 <div class="update"> <!--#echo var="DATE_LOCAL"--></div>
 <h1>About Me </h1>
-<p>
+<p class="me">
 I am a lifelong resident of Rochester, New York.<br /><br />
 I have long been interested in video games; games having been a distinct part of my life since childhood.<br /><br />
 I continue to enjoy games, whether its a series I've loved for years, a masterpiece I missed in the past, or a recent release.<br /><br />

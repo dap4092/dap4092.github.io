@@ -1,5 +1,5 @@
 
-p{font-family: sans-serif; font-size: 120%; margin-left: 150px;width: 600px;word-wrap: break-word;}
+p{font-family: 'Domine', serif; font-size: 120%; margin-left: 150px;width: 600px;word-wrap: break-word; font-style:bold;}
 body{background-color:#c8ef80;}
 h1{color: crimson; margin-left: 130px;}
 .logo{font-style: italic; font-size:120%; margin-left: 15px;}
@@ -12,6 +12,11 @@ h3{margin-left;}
 .update{margin-left:15px;}
 
 
+.me{
+	font-family: 'Domine', serif;
+	font-weight:normal;
+}
+
 
 .row {
     display: -ms-flexbox; /* IE10 */
@@ -19,6 +24,9 @@ h3{margin-left;}
     -ms-flex-wrap: wrap; /* IE10 */
     flex-wrap: wrap;
     padding: 0 30%;
+	font-family: 'Domine', serif;
+	font-size:110%;
+	
 }
 
 
