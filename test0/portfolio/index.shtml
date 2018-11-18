@@ -29,18 +29,21 @@
 <p>
 I am a budding developer in web and other coding environments.<br /><br />
 I am a student majoring in the New Media Interactive Development program at the Rochester Institute of Technology, which focuses on a variety software tools and languages.<br />
+<br>
 </p>
 
+<h1> Projects</h1>
 <!--<<<<<<<<<<<<<<<<<<<-->
 
 <div class="row"> 
-
+This the major project I collaborated on with a team, working in C# to create a game where you control a ship along a track to increase your score. 
+I was responsible for the scoring system and general implementation of assets.
 <div class="logo">
 <a target="_blank" href="http://djbank.cias.rit.edu/">
 <img src="Images/logo.png" class="image" width="1319" height="307" alt="The Oblique logo."> 
 </a>
 <div class="middle">
-<div class="desclogo">The major project I collaborated on, working in C#.
+<div class="desclogo">
 <a href="http://djbank.cias.rit.edu/">Click to visit </a></div>
 </div>
 </div>
@@ -50,15 +53,14 @@ I am a student majoring in the New Media Interactive Development program at the 
 <!--<<<<<<<<<<<<<<<<<-->
 
 <div class="row">
+A project where I was to demonstrate working knowledge of html and CSS,
+I chose Pokemon as the theme with the color scheme referencing the classic logo.<br>
 <div class="poke">
 <a target="_blank" href="http://donaldpelcher.me/portfolio/project1/index.html">
 <img src="Images/International_Pokémon_logo.svg.png" class="image" width="300" height="111" alt="The Pokemon logo."> 
 </a>
 <div class="middle">
-<div class="descpoke">A project where I was to demonstrate working knowledge of html and CSS,
-I chose Pokemon as the theme with the color scheme referencing the classic logo.<br>
 <a href="http://donaldpelcher.me/portfolio/project1/index.html">Click to visit </a></div>
-</div>
 </div>
 </div>
 
