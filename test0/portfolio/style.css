@@ -103,13 +103,55 @@ a:hover + div.descpoke {
 }
 
 div.visual {
+	background-color:#000000;
     width: 320px;
 	margin:15px;
 }
 
+.visual .image {
+  
+}
+.visual:hover .image {
+  opacity: 0.3;
+}
+
+.visual:hover .middle {
+  opacity: 1;
+}
+div.descvis {
+	position:relative;
+	width:auto;
+	height:auto;
+	color: white;
+	font-size: 16px;
+}
+
+a:hover + div.descvis {
+	display:block;
+}
 div.collider {
+	background-color:#000000;
     width: 320px;
 	margin:15px;
+}
+
+.collider:hover .image {
+  opacity: 0.3;
+}
+
+.collider:hover .middle {
+  opacity: 1;
+}
+div.desccol {
+	position:relative;
+	width:auto;
+	height:auto;
+	color: white;
+	font-size: 16px;
+}
+
+a:hover + div.desccol {
+	display:block;
 }
 
 div.pong {
