@@ -111,8 +111,6 @@ Here I simply created a Pong clone with Processing.
 <!--<<<<<<<<<<<<<<<<<<<<<<<-->
 
 <div class="row">
-<div class="clearfix">
-<div class="models">
 
 These are some 3D models I created using Maya & Photoshop.<br><p></p>
 
@@ -127,13 +125,6 @@ These are some 3D models I created using Maya & Photoshop.<br><p></p>
 <div class="mySlides fade">
   <img src="Images/coin.png" height="250" width="250">
 </div>
-<div class="middle">
-
-</div>
-</div>
-
-</div>
-<br>
 
 
 <script>
@@ -153,10 +144,11 @@ function showSlides() {
     setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
 </script>
+
+<p></p>
 </div>
 
-</div>
-
+<P><br></p>
 <footer>
 <script language="javascript" type="text/javascript" 
   src="footer.txt"></script>
