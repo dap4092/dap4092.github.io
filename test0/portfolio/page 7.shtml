@@ -15,8 +15,6 @@
 <ul id="navlist">
 <li ><a href="index.shtml">Main Page</a></li>
 <li><a href="resume.html">Resume</a></li>
-<li ><a href="elements.shtml">Elements</a></li>
-<li ><a href="ida2.shtml" >IGME 102</a></li>
 <li id="active"><a href="page%207.shtml"  id="current">About Me</a></li>
 
 </ul>

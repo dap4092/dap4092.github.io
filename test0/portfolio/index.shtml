@@ -17,8 +17,6 @@
 <ul id="navlist">
 <li id="active"><a href="index.shtml" id="current">Main Page</a></li>
 <li><a href="Pelcher, Donald_resume.pdf">Resume</a></li>
-<li ><a href="elements.shtml">Elements</a></li>
-<li ><a href="ida2.shtml" >IGME 102</a></li>
 <li><a href="page%207.shtml">About Me</a></li>
 </ul>
 </div>
@@ -83,7 +81,6 @@ Click to check out the page.
 <div class="row">
 This exercise saw me creating a canvas where circles of varying colors bounced around.
 User interaction allows circles to be added or removed, lively music plays in the background.<br>
-Click the image to check out the page.
 <div class="collider">
 <a href="http://donaldpelcher.me/portfolio/projects/richproject%202/index.html">
 <img src="Images/collider.png" class="image" width="" height="111" alt="A canvas of circles."> 
@@ -91,6 +88,35 @@ Click the image to check out the page.
 <div class="middle">
 <div class="desccol">
 Click to check out the page.
+</div>
+</div>
+</div>
+
+</div>
+<!--<<<<<<<<<<<<<<<<<<<<<<<-->
+<div class="row">
+I've created a few small projects with Visual Studio as well.<br>
+This was a canvas of sorts which allows the user place shapes of certain colors as well as arrange them by size.
+<div class="collider">
+<img src="Images/shapes.png" class="image" width="" height="111" alt="A canvas with several buttons."> 
+
+<div class="middle">
+<div class="desccol">
+<a href="https://github.com/dap4092/portfolio/blob/master/ida2Project.rar">Click to download the project.</a>
+</div>
+</div>
+</div>
+
+</div>
+<!--<<<<<<<<<<<<<<<<<<<<<<<-->
+<div class="row">
+This project is a game in which 2 players alternate selecting a column to add a box to.
+Once a player lines up four boxes, vertically, horizontally, or diagonally they win.
+<div class="collider">
+<img src="Images/connect.png" class="image" width="" height="111" alt="A grid of squares, some are marked with a 1 or 2."> 
+<div class="middle">
+<div class="desccol">
+<a href="https://github.com/dap4092/portfolio/blob/master/ida2Project%202.rar">Click to download the project.</a>
 </div>
 </div>
 </div>
