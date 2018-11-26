@@ -1,7 +1,7 @@
 
 p{font-family: 'Domine', serif; font-size: 120%; margin-left: 150px;width: 600px;word-wrap: break-word; font-style:bold;}
 body{background-color:#c8ef80;}
-h1{color: crimson; margin-left: 130px;}
+h1{color: crimson; margin-left: 130px;text-shadow: 0px 1px #000000;}
 .logo{font-style: italic; font-size:120%; margin-left: 15px;}
 .resume{font-style: italic; font-size:120%; margin-left: 15px;color:red}
 a:{color:red;}
@@ -23,12 +23,15 @@ h3{margin-left;}
     display: flex;
     -ms-flex-wrap: wrap; /* IE10 */
     flex-wrap: wrap;
+	box-shadow: 5px 5px #888888;
 	margin: 15px;
     padding: 0 30%;
 	margin-bottom:20px;
 	font-family: 'Domine', serif;
 	font-size:110%;
+	text-shadow: 1px 1px #888888;
 	border-style:double;
+	
 }
 
 
@@ -63,6 +66,8 @@ h3{margin-left;}
 	background-color:#000000;
     border: 1px solid black;
     width: 320px;
+	font-family: 'Domine', serif;
+	font-weight:normal;
 }
 
 div.desclogo {
@@ -79,6 +84,8 @@ div.poke {
     border: 1px solid black;
 	margin:15px;
     width: 320px;
+	font-family: 'Domine', serif;
+	font-weight:normal;
 }
 
 .poke:hover .image {
@@ -106,6 +113,8 @@ div.visual {
 	background-color:#000000;
     width: 320px;
 	margin:15px;
+	font-family: 'Domine', serif;
+	font-weight:normal;
 }
 
 .visual .image {
