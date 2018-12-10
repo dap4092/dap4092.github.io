@@ -34,8 +34,8 @@ I am a student majoring in the New Media Interactive Development program at the 
 <!--<<<<<<<<<<<<<<<<<<<-->
 
 <div class="row"> 
-This the major project I collaborated on with a team, working in C# to create a game where you control a ship along a track to increase your score. 
-I was responsible for the scoring system and general implementation of assets.<p></P>
+<h4>Team Project</h4>
+<p></P>
 <div class="logo">
 <a target="_blank" href="http://djbank.cias.rit.edu/">
 <img src="Images/logo.png" class="image" width="1319" height="307" alt="The Oblique logo."> 
@@ -45,28 +45,30 @@ I was responsible for the scoring system and general implementation of assets.<p
 <a href="http://djbank.cias.rit.edu/">Click to visit </a></div>
 </div>
 </div>
-
+This is the major project I collaborated on with a team, working in C# to create a game where you control a ship along a track to increase your score. 
+I was responsible for the scoring system and general implementation of assets.
 </div>
 
 <!--<<<<<<<<<<<<<<<<<-->
 
 <div class="row">
-A project where I was to demonstrate working knowledge of html and CSS,
-I chose Pokemon as the theme with the color scheme referencing the classic logo.<br>
+<h4>Pokemon Basics</h4>
+<p></P>
 <div class="poke">
 <a target="_blank" href="http://donaldpelcher.me/portfolio/project1/index.html">
-<img src="Images/International_Pokémon_logo.svg.png" class="image" width="300" height="111" alt="The Pokemon logo."> 
+<img src="Images/Poke.png" width="320" height="140" alt="The Pokemon logo."> 
 </a>
 <div class="middle">
 <a href="http://donaldpelcher.me/portfolio/project1/index.html">Click to visit </a></div>
 </div>
+A project where I was to demonstrate working knowledge of html and CSS,
+I chose Pokemon as the theme with the color scheme referencing the classic logo.<br>
 </div>
 
 <!---<<<<<<<<<<<<<<<<<<<< <-->
 <div class="row">
-These are several exercises I completed to demonstrate various features of html and css.<br>
-
-This exercise saw implementing audio which could be selected by the user, while also presenting a visualizer.<br>
+<h4>Audio Visualizer</h4>
+<p></P>
 <div class="visual">
 <a target="_blank" href="http://donaldpelcher.me/portfolio/projects/richproject%201/web-audio-visualizer-start.html">
 <img src="Images/visual.png" class="image" width="300" height="111" alt="An audio visualizer."> 
@@ -76,11 +78,14 @@ Click to check out the page.
 </div>
 </div>
 </div>
+These are several exercises I completed to demonstrate various features of html and css.<br>
+
+This exercise saw implementing audio which could be selected by the user, while also presenting a visualizer.<br>
 </div>
 
 <div class="row">
-This exercise saw me creating a canvas where circles of varying colors bounced around.
-User interaction allows circles to be added or removed, lively music plays in the background.<br>
+<h4>Collider</h4>
+<p></P>
 <div class="collider">
 <a href="http://donaldpelcher.me/portfolio/projects/richproject%202/index.html">
 <img src="Images/collider.png" class="image" width="" height="111" alt="A canvas of circles."> 
@@ -91,12 +96,13 @@ Click to check out the page.
 </div>
 </div>
 </div>
-
+This exercise saw me creating a canvas where circles of varying colors bounced around.
+User interaction allows circles to be added or removed, lively music plays in the background.<br>
 </div>
 <!--<<<<<<<<<<<<<<<<<<<<<<<-->
 <div class="row">
-I've created a few small projects with Visual Studio as well.<br>
-This was a canvas of sorts which allows the user place shapes of certain colors as well as arrange them by size.
+<h4>Shape Maker</h4>
+<p></P>
 <div class="collider">
 <img src="Images/shapes.png" class="image" width="" height="111" alt="A canvas with several buttons."> 
 
@@ -106,12 +112,13 @@ This was a canvas of sorts which allows the user place shapes of certain colors 
 </div>
 </div>
 </div>
-
+I've created a few small projects with Visual Studio as well.<br>
+This was a canvas of sorts which allows the user place shapes of certain colors as well as arrange them by size.
 </div>
 <!--<<<<<<<<<<<<<<<<<<<<<<<-->
 <div class="row">
-This project is a game in which 2 players alternate selecting a column to add a box to.
-Once a player lines up four boxes, vertically, horizontally, or diagonally they win.
+<h4>Connect Four</h4>
+<p></P>
 <div class="collider">
 <img src="Images/connect.png" class="image" width="" height="111" alt="A grid of squares, some are marked with a 1 or 2."> 
 <div class="middle">
@@ -120,25 +127,28 @@ Once a player lines up four boxes, vertically, horizontally, or diagonally they 
 </div>
 </div>
 </div>
-
+This project is a game in which 2 players alternate selecting a column to add a box to.
+Once a player lines up four boxes, vertically, horizontally, or diagonally they win.
 </div>
 <!--<<<<<<<<<<<<<<<<<<<<<<<-->
 
 <div class="row">
-This was the final project of my first New Media course.
-Here I simply created a Pong clone with Processing.
+<h4>Pong</h4>
+<p></P>
 <div class="pong">
 <!--<a href="http://donaldpelcher.me/portfolio/projects/-->
 <img src="Images/pong.png" class="image" width="300" height="111" alt="A Pong clone."> 
 </a>
 </div>
-
+This was the final project of my first New Media course.
+Here I simply created a Pong clone with Processing.
 </div>
 <!--<<<<<<<<<<<<<<<<<<<<<<<-->
 
 <div class="row">
+<h4>Models</h4>
+<p></P>
 
-These are some 3D models I created using Maya & Photoshop.<br><p></p>
 
 <div class="mySlides fade">
   <img src="Images/barrel.png" height="250" width="250">
@@ -152,7 +162,7 @@ These are some 3D models I created using Maya & Photoshop.<br><p></p>
   <img src="Images/coin.png" height="250" width="250">
 </div>
 
-
+These are some 3D models that I created using Maya & Photoshop.<br><p></p>
 <script>
 var slideIndex = 0;
 showSlides();
